@@ -1,0 +1,33 @@
+  
+  <ul [ngClass]="{ dark: visibility }" name="fontStyle" aria-label="Font Style">
+    <li value="name" (click)='sortByName()'>Sort by name</li>
+    <li value="addingDate" (click)='sortByAddingDate()'>Sort by adding date</li>
+    <li value="yearOfProduction" (click)='sortByProductionYear()' >Sort by year of release</li>
+    <li><input class="search" placeholder="Search" (keyup)="filter($event)" /></li>
+    <li  (click)="toggle()">change mode</li>
+    <li  (click)="toggleView()">change view</li>
+  </ul>
+  <div class="films" [ngClass]="{ dark: visibility }">
+    <ng-container *ngFor="let film of films">
+      <div name='view' [ngClass]="{'film': table, 'list': !table}" >
+        <div class="film-thumb-container">
+          <img src="{{ film.poster }}" class="film-thumbnail" />
+        </div>
+        <div class="film-description">
+          <h2>{{ film.name | uppercase }}</h2>
+          <p>Rating: {{ film.rating }}/10</p>
+          <p>Box office: ${{ film.cashFlow | shortNumber }} </p>
+          <p>Year of production: {{ film.yearOfProduction }}</p>
+          <p>Adding to this site: {{ film.addingDate | date: "shortDate":"GMT+2" }}</p>
+          <div class="float">
+            <p class="favourite" *ngIf='film.favourite===true' (click)='favouriteFilm(film.id)'>It's your favourite!</p>
+            <p  class="favourite" *ngIf='film.favourite===!true'(click)='favouriteFilm(film.id)'>Click here and add to favourites!</p>
+            <button class="remove" (click)="removeFilm(film.id)">x</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  
+  

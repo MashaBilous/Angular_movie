@@ -1,0 +1,133 @@
+import { Film } from './filmClass';
+
+export const FILMS: Film[] = [
+  {
+    id: 1,
+    name: 'Де гроші?',
+    cashFlow: 879,
+    rating: 6,
+    yearOfProduction: 2021,
+    addingDate: new Date(2021, 3, 12),
+    poster:
+      'https://planetakino.ua/res/get-poster/00000000000000000000000000003264/vend1.jpg', 
+      favourite: false,
+  },
+  {
+    id: 2,
+    name: 'скажене весілля',
+    cashFlow: 215000,
+    rating: 7,
+    yearOfProduction: 2020,
+    addingDate: new Date(2020, 2, 12),
+    poster:
+      'https://upload.wikimedia.org/wikipedia/uk/8/8e/Skazhene_Vesillya_Poster.jpg',
+      favourite: false,
+  },
+  {
+    id: 3,
+    name: 'Я, ти, він, вона',
+    cashFlow: 220000,
+    rating: 4,
+    yearOfProduction: 2018,
+    addingDate: new Date(2018, 11, 15),
+    poster: 'https://upload.wikimedia.org/wikipedia/uk/6/68/Me_You_He_She.jpg',
+    favourite: true,
+  },
+  {
+    id: 4,
+    name: 'Інфоголік',
+    cashFlow: 80000,
+    rating: 3,
+    yearOfProduction: 2019,
+    addingDate: new Date(2019, 11, 20),
+    poster:
+      'https://sd.ua/files/imagecache/th320/afisha/22155529_1182327845235040_2127957158_n.jpg',
+      favourite: true,
+  },
+  {
+    id: 5,
+    name: 'Викрадена принцеса',
+    cashFlow: 150000,
+    rating: 6,
+    yearOfProduction: 2017,
+    addingDate: new Date(2017, 30, 10),
+    poster:
+      'https://tickikids.ams3.cdn.digitaloceanspaces.com/z1.cache/gallery/activities/30070/image_5ba8788802d364.40159728.jpg',
+      favourite: true,
+  },
+  {
+    id: 6,
+    name: 'Гаррі Поттер і філософський камінь',
+    cashFlow: 130215000,
+    rating: 9,
+    yearOfProduction: 2021,
+    addingDate: new Date(2013, 3, 10),
+    poster:
+      'https://upload.wikimedia.org/wikipedia/ru/b/b4/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%94_movie.jpg',
+      favourite: true,
+  },
+  {
+    id: 7,
+    name: 'Гаррі Поттер і в"язень Азкабану',
+    cashFlow: 150000000,
+    rating: 8,
+    yearOfProduction: 2005,
+    addingDate: new Date(2013, 3, 10),
+    poster:
+      'https://i.pinimg.com/originals/ff/cf/07/ffcf070e22c2ca7e9134d0b1779877f8.jpg',
+      favourite: true,
+  },
+  {
+    id: 8,
+    name: '8 кращих побачень',
+    cashFlow: 300000,
+    rating: 7,
+    yearOfProduction: 2018,
+    addingDate: new Date(2018, 8, 9),
+    poster:
+      'https://upload.wikimedia.org/wikipedia/uk/thumb/d/d5/8_%D0%BA%D1%80%D0%B0%D1%89%D0%B8%D1%85_%D0%BF%D0%BE%D0%B1%D0%B0%D1%87%D0%B5%D0%BD%D1%8C.jpg/220px-8_%D0%BA%D1%80%D0%B0%D1%89%D0%B8%D1%85_%D0%BF%D0%BE%D0%B1%D0%B0%D1%87%D0%B5%D0%BD%D1%8C.jpg',
+      favourite: true,
+  },
+  {
+    id: 9,
+    name: 'Слуга народу',
+    cashFlow: 400000,
+    rating: 7,
+    yearOfProduction: 2017,
+    addingDate: new Date(2017, 8, 12),
+    poster: 'https://s6.vcdn.biz/static/f/1007953611/image.jpg/pt/r300x423x4',
+    favourite: false,
+  },
+  {
+    id: 10,
+    name: '8 нових побачень',
+    cashFlow: 369000,
+    rating: 6,
+    yearOfProduction: 2016,
+    addingDate: new Date(2016, 1, 2),
+    poster:
+      'https://upload.wikimedia.org/wikipedia/uk/1/1d/8_novyh_pobachen_%28UA_official_poster%29.jpg',
+      favourite: false,
+  },
+  {
+    id: 11,
+    name: 'Службовий роман. Наш час',
+    cashFlow: 100000,
+    rating: 6,
+    yearOfProduction: 2015,
+    addingDate: new Date(2015, 11, 12),
+    poster:
+      'https://upload.wikimedia.org/wikipedia/uk/2/23/Office_Romance._Our_Time.jpg',
+      favourite: false,
+  },
+  {
+    id: 12,
+    name: 'Вовк із Волл-Стріт',
+    cashFlow: 20210000,
+    rating: 9,
+    yearOfProduction: 2013,
+    addingDate: new Date(2013, 1, 2),
+    poster: 'https://lemarbet.com/wp-content/uploads/2019/02/image13-min.png',
+    favourite: false,
+  },
+];
