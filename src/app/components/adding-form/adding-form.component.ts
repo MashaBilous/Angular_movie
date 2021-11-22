@@ -25,7 +25,7 @@ ngOnInit(): void {
   this.addFilmForm = new FormGroup ({
     name: new FormControl('', Validators.required),
     cashFlow: new FormControl('', Validators.required),
-    rating: new FormControl('', Validators.required),
+    rating: new FormControl('', [Validators.required, Validators.min(1), Validators.max(10), Validators.maxLength(2)]),
     yearOfProduction: new FormControl('', Validators.required),
     addingDate: new FormControl('', Validators.required),
     poster: new FormControl('', Validators.required),
@@ -39,6 +39,16 @@ ngOnInit(): void {
     reader.onload = () => {
       this.imgSource = typeof (reader.result) == 'string' ? reader.result:'';
     }
+  }
+
+  get name() {
+    return this.addFilmForm.get('name');
+  }
+  get cashFlow() {
+    return this.addFilmForm.get('cashFlow');
+  }
+  get rating() {
+    return this.addFilmForm.get('rating');
   }
 
 public onSubmit(): void {
